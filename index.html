@@ -5,46 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-image: radial-gradient(orange,#ff3399,purple);
-            background-repeat: no-repeat;
-            height: 800px;
+        .flex-container{
+            display:flex;
+            width:650px;
+            height:300px;
+            background-color:lightblue;
+            margin:auto;
         }
-        .image{
-            height:90px;
-        }
-        .words{
-            font-size: 17px;
+        .flex-item{
+            background-color:lightyellow;
+            width:300px;
+            height:200px;
+            margin:10px;
         }
     </style>
 </head>
-<body>
-    <h1 style="font-size: 100px; color:aquamarine"><center>Pop Art</center></h1>
-    <p><center><img class="image" src="Pop.png"> <img class="image" src="Pop2.jpeg"> <img class="image" src="Pop3.jpeg"></center></p>
-    <div class="words" style="margin:auto; background-color: blueviolet; width:600px; text-align: center; color:aquamarine; font-weight: bold;">
-        <p><center>Pop art is an art movement that emerged in the 1950s and flourished in the 1960s in America and Britain, drawing inspiration from sources in popular and commercial culture. Different cultures and countries contributed to the movement during the 1960s and 70s.</center></p>
-        <p>Prominent Artists include:</p>
-        <ul>
-            <li>Andy Warhol</li>
-            <li>Roy Lichtenstein</li>
-            <li>David Hockney</li>
-            <li>Richard Hamilton</li>
-            <li>James Rosenquist</li>
-        </ul>
+<body style="background:linear-gradient(to right,blue,lightyellow)">
+    <center>
+    <h1><i>Types of Insects</i></h1>
+    </center>
+    <form style="text-align:center; font-size:30px"action="/form.php"target="blank"method="post">
+        <fieldset>
+            <legend><i>Which is your favourite?</i></legend>
+            <p style="color:yellowgreen"(146, 205, 50)"><i>Ant:</i></p><br>
+            <input type="checkbox">Yes<input type="checkbox">No<br>
+           <p style="color:yellowgreen"><i>Bee:</i></p><br>
+            <input type="checkbox">Yes<input type="checkbox">No<br>
+            <p style="color:yellowgreen"><i>Fly:</i></p><br>
+            <input type="checkbox">Yes<input type="checkbox">No<br>
+            <input type="button" value="Submit">
+        </fieldset>
+    </form>
+    <div class="flex-container">
+        <div class="flex-item"><img src="fly.avif" height="200px" width="200px"></div>
+        <div class="flex-item"><img src="bee.png" height="200px" width="200px"></div>
+        <div class="flex-item"><img src="ant.png" height="200px" width="200px"></div>
     </div>
-    <div><center>
-        <p style="font-size:20px; font-weight:bolder; color:lime">To learn more go to...</p>
-        <iframe src="https://en.wikipedia.org/wiki/Pop_art" width="600px">
-        </iframe>
-    </center></div>
-    <script>
-        console.log(2==3)
-        console.log(2!=3)
-        console.log(2>3)
-        console.log(2<3)
-        console.log(2>=3)
-        console.log(2<=3)
-        //conditional operators
-    </script>
 </body>
 </html>
